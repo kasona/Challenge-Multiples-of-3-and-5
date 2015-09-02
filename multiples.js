@@ -6,7 +6,14 @@
 exports.sumOfAMultiple = function( n ) {
   var sum = 0;
 
-  // do your work here
-
+  /* variable i starting at 0, if its less than 10 then OK, +1
+   if % 3 === 0  or % 5 === 0 then sum +=1
+    */
+  for (var i = 0; i < n; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sum += i;
+    }
+  }
+  console.log('Sum: %d', sum);
   return sum;
 };
